@@ -27,4 +27,4 @@ Explore the sections above to begin your journey, or check out our [GitHub repos
 
 ## About the Author
 
-I (Himanshu) am a Data Leader with expertise in AI/ML, data engineering, and cloud infrastructure. Connect with me on [Twitter](https://x.com/himanshuptech) or [LinkedIn](www.linkedin.com/in/hrnp).
+Himanshu is a Data Leader with expertise in AI/ML, data engineering, and cloud infrastructure. Connect with me on [Twitter](https://x.com/himanshuptech) or [LinkedIn](www.linkedin.com/in/hrnp).
