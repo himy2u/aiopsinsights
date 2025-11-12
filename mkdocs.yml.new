@@ -1,0 +1,68 @@
+site_name: AIOps Insights
+site_url: https://aiops-insights.com
+repo_url: https://github.com/himy2u/aiopsinsights.git
+
+# Disable strict mode to allow missing pages
+strict: false
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/extra.js
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+# Navigation
+nav:
+  - Home: index.md
+  - 'AI Engineering':
+      - Overview: ai-engineering/index.md
+      - 'MLOps Pipeline': ai-engineering/mlops.md
+      - 'Model Deployment': ai-engineering/deployment.md
+      - 'Monitoring & Scaling': ai-engineering/monitoring.md
+  - 'AI Research':
+      - Overview: ai-research/index.md
+      - 'Attention Is All You Need': ai-research/attention.md
+      - 'Transformers': ai-research/transformers.md
+      - 'Reinforcement Learning': ai-research/rl.md
+  - 'Tools & FinOps':
+      - Overview: finops/index.md
+      - 'Cloud Providers':
+          - 'AWS': finops/aws.md
+          - 'GCP': finops/gcp.md
+          - 'Azure': finops/azure.md
+      - 'Case Studies': finops/case-studies.md
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+# Markdown extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.emoji
+  - attr_list
+  - pymdownx.details
+
+# Build options
+use_directory_urls: true
+dev_addr: 0.0.0.0:8000

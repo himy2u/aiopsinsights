@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+  <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+{% endblock %}
+
+{% block announce %}
+  <div class="announcement">
+    <p>🚀 <strong>New:</strong> Check out our latest article on <a href="/ai-papers/attention-is-all-you-need/">Transformers Architecture</a></p>
+  </div>
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+  
+  <!-- Custom Footer -->
+  {% if page.meta and page.meta.hide_footer %}
+    <!-- Hide footer -->
+  {% else %}
+    <footer class="custom-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AI/ML</h3>
+          <ul>
+            <li><a href="/ai-papers/">Research Papers</a></li>
+            <li><a href="/ai-papers/nlp/">NLP</a></li>
+            <li><a href="/ai-papers/cv/">Computer Vision</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Engineering</h3>
+          <ul>
+            <li><a href="/end-to-end-eng/mlops/">MLOps</a></li>
+            <li><a href="/end-to-end-eng/model-serving/">Model Serving</a></li>
+            <li><a href="/end-to-end-eng/monitoring/">Monitoring</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="https://github.com/himanshudataengg/sales-forecast-pipeline" target="_blank">Sales Forecast Repo</a></li>
+            <li><a href="https://github.com/himy2u/aiopsinsights" target="_blank">Blog Source</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="https://github.com/himy2u" target="_blank" title="GitHub">
+              <span class="twemoji">{% include ".icons/fontawesome/brands/github.svg" %}</span>
+            </a>
+            <a href="https://twitter.com/himy2u" target="_blank" title="Twitter">
+              <span class="twemoji">{% include ".icons/fontawesome/brands/twitter.svg" %}</span>
+            </a>
+            <a href="https://linkedin.com/in/himy2u" target="_blank" title="LinkedIn">
+              <span class="twemoji">{% include ".icons/fontawesome/brands/linkedin.svg" %}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 AIOps Insights. All rights reserved.</p>
+      </div>
+    </footer>
+  {% endif %}
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <!-- Custom JavaScript -->
+  <script>
+    // Add smooth scrolling for anchor links
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Add active class to current navigation item
+      const currentPath = window.location.pathname;
+      document.querySelectorAll('.md-tabs__link').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+          link.classList.add('active');
+        }
+      });
+
+      // Add animation to cards on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.card, .md-content img, .feature').forEach(el => {
+        observer.observe(el);
+      });
+    });
+  </script>
+{% endblock %}

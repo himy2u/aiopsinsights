@@ -1,0 +1,49 @@
+site_name: AIOps Insights
+site_url: https://aiops-insights.com
+repo_url: https://github.com/himy2u/aiopsinsights.git
+
+# Disable strict mode to allow missing pages
+strict: false
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/extra.js
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - search.highlight
+
+# Navigation - simplified to match existing content
+nav:
+  - Home: index.md
+  - 'AI Papers': ai-papers/index.md
+  - 'Engineering': end-to-end-eng/index.md
+  - 'FinOps': tool-finops/index.md
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+# Markdown extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.emoji
+  - attr_list
+
+# Build options
+use_directory_urls: true
+dev_addr: 0.0.0.0:8000
