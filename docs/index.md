@@ -1,6 +1,6 @@
 # Welcome to AIOps Insights
 
-## Exploring the Intersection of AI and Data Engineering
+## Exploring AI and Data Engineering
 
 Whether you're a data scientist, ML engineer, Data Engineer or tech leader, you'll find valuable content here to help you navigate the complex landscape of AI and data operations.
 
