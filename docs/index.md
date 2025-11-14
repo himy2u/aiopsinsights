@@ -2,7 +2,7 @@
 
 ## Exploring the Intersection of AI, Data Engineering, and Operations
 
-AIOps Insights is your go-to resource for cutting-edge insights into AI and Data Engineering and Operations and the tools that power modern data infrastructure. Whether you're a data scientist, ML engineer, Data Engineer or tech leader, you'll find valuable content to help you navigate the complex landscape of AI and data operations.
+Whether you're a data scientist, ML engineer, Data Engineer or tech leader, you'll find valuable content here to help you navigate the complex landscape of AI and data operations.
 
 ## Featured Sections
 
