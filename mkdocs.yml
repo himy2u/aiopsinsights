@@ -22,8 +22,12 @@ theme:
 nav:
   - Home: index.md
   - 'AI Papers': ai-papers/index.md
-  - 'Engineering': end-to-end-eng/index.md
-  - 'FinOps': tool-finops/index.md
+  - 'AI Engineering':
+      - Overview: ai-engineering/index.md
+      - LLMOps Healthcare Triage:
+          - Part 1: ai-engineering/llmops-healthcare-triage/part1-problem-space.md
+          - Part 2: ai-engineering/llmops-healthcare-triage/part2-bronze-ingestion.md
+  - 'FinOps': finops/index.md
 
 # Plugins
 plugins:
