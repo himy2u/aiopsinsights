@@ -18,16 +18,55 @@ theme:
     - navigation.indexes
     - search.highlight
 
-# Navigation - simplified to match existing content
+# Navigation
 nav:
   - Home: index.md
   - 'AI Papers': ai-papers/index.md
   - 'AI Engineering':
       - Overview: ai-engineering/index.md
-      - LLMOps Healthcare Triage:
-          - Part 1: ai-engineering/llmops-healthcare-triage/part1-problem-space.md
-          - Part 2: ai-engineering/llmops-healthcare-triage/part2-bronze-ingestion.md
-  - 'FinOps': finops/index.md
+      - 'LLMOps Healthcare Triage':
+        - 'Part 1: Problem Space': 'ai-engineering/llmops-healthcare-triage/part1-problem-space.md'
+        - 'Part 2: Data Profiling': 'ai-engineering/llmops-healthcare-triage/part2-data-profiling.md'
+        - 'Part 3: Bronze Ingestion': 'ai-engineering/llmops-healthcare-triage/part3-bronze-ingestion.md'
+        - 'Part 4: Silver Layer': 'ai-engineering/llmops-healthcare-triage/part4-silver-layer.md'
+        - 'Part 5: Gold Layer & Feature Store': 'ai-engineering/llmops-healthcare-triage/part5-gold-layer.md'
+        - 'Part 6: Vector Search': 'ai-engineering/llmops-healthcare-triage/part6-vector-search.md'
+        - 'Part 7: LLM Integration & RAG': 'ai-engineering/llmops-healthcare-triage/part7-llm-rag.md'
+        - 'Part 8: Monitoring & Scaling': 'ai-engineering/llmops-healthcare-triage/part8-monitoring-scaling.md'
+  - 'End-to-End Engineering':
+      - Overview: end-to-end-eng/index.md
+      - 'Data Ingestion':
+        - 'Batch Processing': 'end-to-end-eng/batch-processing/'
+        - 'Stream Processing': 'end-to-end-eng/stream-processing.md'
+        - 'Data Validation': 'end-to-end-eng/data-validation.md'
+      - 'Data Processing':
+        - 'ETL/ELT Pipelines': 'end-to-end-eng/etl-pipelines.md'
+        - 'Feature Engineering': 'end-to-end-eng/feature-engineering.md'
+        - 'Data Quality': 'end-to-end-eng/data-quality.md'
+      - 'Model Development':
+        - 'Experiment Tracking': 'end-to-end-eng/experiment-tracking.md'
+        - 'Model Training': 'end-to-end-eng/model-training.md'
+        - 'Hyperparameter Optimization': 'end-to-end-eng/hyperparameter-optimization.md'
+      - 'Deployment & Operations':
+        - 'Model Serving': 'end-to-end-eng/model-serving.md'
+        - 'Monitoring & Observability': 'end-to-end-eng/monitoring.md'
+        - 'MLOps Best Practices': 'end-to-end-eng/mlops.md'
+      - 'Case Studies':
+        - 'Recommendation System': 'end-to-end-eng/case-studies/recommendation-system.md'
+  - 'Tools & FinOps':
+      - Overview: 'tool-finops/index.md'
+      - 'Cloud Cost Management':
+        - 'AWS Cost Optimization': 'tool-finops/aws-cost-optimization.md'
+        - 'GCP Cost Management': 'tool-finops/gcp-cost-management.md'
+        - 'Azure Cost Control': 'tool-finops/azure-cost-control.md'
+      - 'Monitoring & Optimization':
+        - 'Datadog vs. New Relic': 'tool-finops/datadog-vs-newrelic.md'
+        - 'Kubernetes Cost Management': 'tool-finops/k8s-cost-management.md'
+        - 'Serverless Cost Optimization': 'tool-finops/serverless-costs.md'
+  - 'FinOps Framework':
+      - 'Core Principles': 'finops/principles.md'
+      - 'Implementation Guide': 'finops/implementation.md'
+      - 'Case Studies': 'finops/case-studies.md'
 
 # Plugins
 plugins:

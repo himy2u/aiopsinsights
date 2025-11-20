@@ -16,9 +16,7 @@ Comprehensive guides on building robust data pipelines, from data ingestion to m
 In-depth reviews of tools and frameworks, along with financial operations insights for managing your cloud and data infrastructure costs.
 
 ## Latest Updates
-
-- **May 2025**: Launched AIOps Insights blog!
-- Coming soon: Deep dive into the latest MLOps best practices
+- Coming soon: Deep dive into the latest AIOps best practices
 - Coming soon: Cost optimization strategies for LLM deployments
 
 ## Get Started
