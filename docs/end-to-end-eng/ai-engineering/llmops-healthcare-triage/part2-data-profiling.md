@@ -128,3 +128,6 @@ flowchart LR
 3. Configure vector embeddings for semantic search
 
 In Part 3, we'll dive into building the bronze layer with proper error handling and monitoring.
+
+---
+[← Part 1: Problem Space](part1-problem-space.md) | [Part 3: Bronze Ingestion →](part3-bronze-ingestion.md)
