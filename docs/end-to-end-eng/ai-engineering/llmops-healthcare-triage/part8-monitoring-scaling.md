@@ -609,13 +609,6 @@ In this comprehensive series, we've built a production-grade LLM-powered healthc
 4. **LLM Integration** - Added RAG for accurate, context-aware responses
 5. **Monitoring & Scaling** - Ensured reliability and performance at scale
 
-### Next Steps
-
-To continue improving the system, consider:
-
-1. **Model Fine-tuning** - Customize LLMs for your specific healthcare domain
-2. **Multi-modal Capabilities** - Add support for images, audio, and other data types
-3. **Compliance & Security** - Implement additional safeguards for healthcare data
-4. **User Experience** - Build intuitive interfaces for different user roles
-
-Thank you for following along! The complete codebase is available on [GitHub](https://github.com/yourusername/llm-triage).
+---
+ 
+[← Part 7: LLM Integration & RAG](part7-llm-rag.md)

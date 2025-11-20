@@ -331,4 +331,6 @@ def search_with_llm(query: str) -> List[dict]:
 
 In the next article, we'll implement LLM integration and Retrieval-Augmented Generation (RAG) to build an intelligent question-answering system on top of our vector search capabilities.
 
-[Continue to Part 7: LLM Integration & RAG →](part7-llm-rag.md)
+---
+  
+[← Part 5: Gold Layer & Feature Store](part5-gold-layer.md) | [Continue to Part 7: LLM Integration & RAG →](part7-llm-rag.md)

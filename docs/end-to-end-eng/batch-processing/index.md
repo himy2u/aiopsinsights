@@ -75,6 +75,6 @@ Batch processing is a method of running high-volume, repetitive data jobs where 
 
 ## Next Steps
 
-- [Learn about Stream Processing](/end-to-end-eng/data-ingestion/stream-processing/)
-- [Explore Data Validation](/end-to-end-eng/data-ingestion/data-validation/)
-- [Understand ETL/ELT Pipelines](/end-to-end-eng/etl-pipelines/)
+- [Learn about Stream Processing](../data-ingestion/stream-processing.md)
+- [Explore Data Validation](../data-ingestion/data-validation.md)
+- [Understand ETL/ELT Pipelines](../etl-pipelines.md)

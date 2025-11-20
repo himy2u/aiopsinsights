@@ -169,4 +169,6 @@ def get_training_data():
 
 In the next article, we'll implement vector search capabilities to enable semantic similarity search over our clinical notes.
 
-[Continue to Part 6: Vector Search with Qdrant →](part6-vector-search.md)
+---
+  
+[← Part 4: Silver Layer](part4-silver-layer.md) | [Continue to Part 6: Vector Search with Qdrant →](part6-vector-search.md)

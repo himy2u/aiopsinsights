@@ -213,3 +213,6 @@ start_http_server(8000)
 3. Build the RAG pipeline
 
 In Part 4, we'll transform this raw data into a clean, analysis-ready Silver layer with proper schema enforcement and data quality checks.
+
+---
+[← Part 2: Data Profiling](part2-data-profiling.md) | [Part 4: Silver Layer →](part4-silver-layer.md)

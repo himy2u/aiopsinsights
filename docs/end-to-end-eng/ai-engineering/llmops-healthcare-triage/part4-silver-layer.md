@@ -72,4 +72,6 @@ def clean_clinical_text(text: str) -> str:
 - Drift detection for text statistics
 - Alerting on PII detection
 
-[Continue to Part 5: Gold Layer & Feature Store →](part5-gold-layer.md)
+---
+
+[← Part 3: Bronze Ingestion](part3-bronze-ingestion.md) | [Continue to Part 5: Gold Layer & Feature Store →](part5-gold-layer.md)

@@ -562,4 +562,5 @@ In the next article, we'll cover monitoring and scaling the system in production
    - Model fine-tuning
    - Feedback loops
 
-[Continue to Part 8: Monitoring & Scaling →](part8-monitoring-scaling.md)
+---
+[← Part 6: Vector Search](part6-vector-search.md) | [Continue to Part 8: Monitoring & Scaling →](part8-monitoring-scaling.md)
