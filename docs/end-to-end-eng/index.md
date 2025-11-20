@@ -26,11 +26,10 @@ New to end-to-end AI systems? Start with our [beginner's guide](/end-to-end-eng/
 ### Deployment & Operations
 - [Model Serving](/end-to-end-eng/model-serving/)
 - [Monitoring & Observability](/end-to-end-eng/monitoring/)
-- [AI Engineering Best Practices](/end-to-end-eng/mlops/)
+- [MLOps Best Practices](mlops.md)
 
 ## AI Engineering Resources
-- [AI Engineering Overview](/ai-engineering/)
-- [LLMOps Healthcare Triage Series](/ai-engineering/llmops-healthcare-triage/part1-problem-space/)
+ - [LLMOps Healthcare Triage Series](ai-engineering/llmops-healthcare-triage/part1-problem-space.md)
 
 ## Case Studies
 - [Building a Real-time Recommendation System](/end-to-end-eng/case-studies/recommendation-system/)

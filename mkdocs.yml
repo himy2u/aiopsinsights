@@ -24,11 +24,9 @@ nav:
   - 'AI Research': 'ai-research/index.md'
   - 'AI Papers': ai-papers/index.md
   - 'AI Engineering':
-      - Overview: 'end-to-end-eng/ai-engineering/index.md'
       - 'GitHub Pages Custom Domain': 'end-to-end-eng/ai-engineering/github-pages-custom-domain.md'
       - 'LLMOps Healthcare Triage':
         - 'Part 1: Problem Space': 'end-to-end-eng/ai-engineering/llmops-healthcare-triage/part1-problem-space.md'
-        - 'Part 2: Bronze Ingestion': 'end-to-end-eng/ai-engineering/llmops-healthcare-triage/part2-bronze-ingestion.md'
         - 'Part 2: Data Profiling': 'end-to-end-eng/ai-engineering/llmops-healthcare-triage/part2-data-profiling.md'
         - 'Part 3: Bronze Ingestion': 'end-to-end-eng/ai-engineering/llmops-healthcare-triage/part3-bronze-ingestion.md'
         - 'Part 4: Silver Layer': 'end-to-end-eng/ai-engineering/llmops-healthcare-triage/part4-silver-layer.md'
@@ -90,7 +88,7 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - toc:
-      permalink: true
+      permalink: false
   - pymdownx.emoji
   - attr_list
 
