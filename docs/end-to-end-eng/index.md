@@ -28,8 +28,8 @@ New to end-to-end AI systems? Start with our [beginner's guide](/end-to-end-eng/
 - [Monitoring & Observability](/end-to-end-eng/monitoring/)
 - [MLOps Best Practices](mlops.md)
 
-## AI Engineering Resources
- - [LLMOps Healthcare Triage Series](ai-engineering/llmops-healthcare-triage/part1-problem-space.md)
+## Hands-on AI Engineering Excercise
+ - [LLMOps Healthcare Triage Series: Learn by Doing](ai-engineering/llmops-healthcare-triage/part1-problem-space.md)
 
 ## Case Studies
 - [Building a Real-time Recommendation System](/end-to-end-eng/case-studies/recommendation-system/)
