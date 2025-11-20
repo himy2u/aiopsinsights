@@ -42,7 +42,7 @@ nav:
       - 'Data Ingestion':
         - Overview: 'end-to-end-eng/data-ingestion/index.md'
         - 'Batch Processing': 'end-to-end-eng/batch-processing/index.md'
-        - 'Stream Processing': 'end-to-end-eng/stream-processing/index.md'
+        - 'Stream Processing': 'end-to-end-eng/data-ingestion/stream-processing.md'
         - 'Data Validation': 'end-to-end-eng/data-ingestion/data-validation.md'
       - 'Data Processing':
         - 'ETL/ELT Pipelines': 'end-to-end-eng/etl-pipelines.md'
