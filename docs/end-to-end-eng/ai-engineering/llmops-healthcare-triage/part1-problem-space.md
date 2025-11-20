@@ -57,9 +57,23 @@ Simply prompting a generic LLM is not enough; it's expensive, slow, and lacks th
 2.  **Latency SLOs**: We will define and monitor a Service Level Objective for API response time, aiming for a **p99 latency of <2 seconds**.
 3.  **Confidence Scoring & Monitoring**: Every prediction will have a confidence score. Low-confidence outputs will be automatically flagged for human review. We will also monitor for data and model drift to ensure performance doesn't degrade over time.
 
+#### Business KPIs
+In addition to technical metrics, we will track outcomes that demonstrate business value:
+- **Average Time-to-Triage**: Target reduction (e.g., from 12 mins to < 2 mins)
+- **ED Diversion Rate**: Percent of non-emergent cases routed away from ER appropriately
+- **Referral Accuracy**: Correct specialty routing rate measured via retrospective audits
+- **Care Access Uplift**: Increase in patients successfully routed to in-network providers
+- **Cost per Triage**: All-in unit cost reduction vs. human-only workflow
+- **Safety Events**: Near-miss and adverse-event rate; zero-tolerance thresholds
+- **Patient Satisfaction (CSAT/NPS)**: Experience scores post-triage
+- **Clinician Load Reduction**: Reduction in manual reviews per 1,000 triages
+
 ## What's Next
 
-In Part 2, we will dive deep into the first stage of our project lifecycle: **Bronze Ingestion**. We'll cover the FinOps decisions, architecture choices, and write the first lines of code for our data pipeline.
+In Part 2, we will dive into the next stage of our lifecycle: **Data Profiling** and **Bronze Ingestion** fundamentals.
+
+- Continue to: [Part 2 — Data Profiling](part2-data-profiling.md)
+- Or jump ahead to: [Part 3 — Bronze Ingestion](part3-bronze-ingestion.md)
 
 ---
 *This series is based on real-world implementations but uses synthetic data and anonymized case studies. Always consult healthcare professionals for medical advice.*

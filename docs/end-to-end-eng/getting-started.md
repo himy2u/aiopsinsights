@@ -24,6 +24,6 @@ pip install pandas scikit-learn tensorflow torch
 4. Add evaluation metrics
 
 ## Next Steps
-- Explore our [AI Engineering](/ai-engineering/) section for advanced topics
-- Check out our [case studies](/end-to-end-eng/case-studies/)
+- Explore our [AI Engineering](ai-engineering/index.md) section for advanced topics
+- Check out our [case studies](case-studies/recommendation-system.md)
 - Learn about [deployment best practices](/end-to-end-eng/model-serving/)
