@@ -1,4 +1,4 @@
-# Redefining Healthcare Triage with LLMs: An AI & Data Engineering Challenge
+# Redefining Healthcare Triage : An AI & Data Engineering Challenge
 
 *Published: November 19, 2025*  
 *Part 1 of 6 in the "Building a Production-Grade LLM Triage System" series*
