@@ -5,6 +5,14 @@
 
 While the business case for improving healthcare triage is clear, the core of the problem is a fascinating AI and data engineering challenge. This series will tackle it head-on.
 
+## Quick answers
+
+- **What is triage?** Sorting patient concerns to the right level of care and specialty with appropriate urgency.
+- **What problem are we solving?** Converting messy, free‑text symptom descriptions into structured decisions: `{specialty, urgency, next best action}`—reliably, safely, and fast.
+- **Why now?** Mature open models, affordable vector databases, and measurable ROI from reducing wait times and misrouting make automated triage both feasible and valuable.
+- **How to solve (preferred)?** A hybrid approach: a small fine‑tuned classifier for `{specialty, urgency}` plus RAG for medical grounding and an agentic clarifier for ambiguous inputs—chosen for accuracy, latency, and cost control.
+- **What does success look like?** Patients get the right care, quickly, with fewer ER misroutes. We’ll know we’ve succeeded when we hit our target KPIs (below) and sustain them in production.
+
 ### The Core Problem: From Unstructured Symptoms to Structured Decisions
 
 The central task is to transform a patient's colloquial, often ambiguous, description of their symptoms into a structured, clinically relevant, and actionable decision. 
@@ -59,14 +67,11 @@ Simply prompting a generic LLM is not enough; it's expensive, slow, and lacks th
 
 #### Business KPIs
 In addition to technical metrics, we will track outcomes that demonstrate business value:
-- **Average Time-to-Triage**: Target reduction (e.g., from 12 mins to < 2 mins)
-- **ED Diversion Rate**: Percent of non-emergent cases routed away from ER appropriately
-- **Referral Accuracy**: Correct specialty routing rate measured via retrospective audits
-- **Care Access Uplift**: Increase in patients successfully routed to in-network providers
-- **Cost per Triage**: All-in unit cost reduction vs. human-only workflow
-- **Safety Events**: Near-miss and adverse-event rate; zero-tolerance thresholds
-- **Patient Satisfaction (CSAT/NPS)**: Experience scores post-triage
-- **Clinician Load Reduction**: Reduction in manual reviews per 1,000 triages
+- **Average Time-to-Triage**: Reduce from minutes to seconds for first, safe guidance
+- **Referral Accuracy**: Correct specialty/level-of-care routing rate (audit-based)
+- **ED Diversion Rate**: Appropriate routing of non-emergent cases away from ER
+- **Patient Safety Events**: Near-miss/adverse-event rate (target: zero)
+- **Patient Experience (CSAT/NPS)**: Post-triage satisfaction score
 
 ## What's Next
 
