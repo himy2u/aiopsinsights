@@ -82,6 +82,6 @@ When it comes to modern application performance monitoring (APM) and observabili
 - Both support custom integrations via APIs
 
 ## Next Steps
-- [Kubernetes Cost Management](/tool-finops/k8s-cost-management/)
-- [Serverless Cost Optimization](/tool-finops/serverless-costs/)
-- [AWS Cost Optimization](/tool-finops/aws-cost-optimization/)
+- [Kubernetes Cost Management](k8s-cost-management.md)
+- [Serverless Cost Optimization](serverless-costs.md)
+- [AWS Cost Optimization](aws-cost-optimization.md)

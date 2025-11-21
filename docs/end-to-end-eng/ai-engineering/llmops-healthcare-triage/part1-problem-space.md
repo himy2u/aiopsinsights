@@ -53,6 +53,11 @@ The triage service produces a compact, structured decision payload:
 }
 ```
 
+### Big picture: Use cases
+- **AI/ML**: Real-time triage decisions, model evaluation (agreement, safety), drift monitoring, and cost/tokens tracking per model version.
+- **BI/Analytics**: Executive and operational dashboards on volume, latency SLOs, referral accuracy, ED diversion rate, patient experience, safety events.
+- **Product Analytics**: Funnel from intake → questions → decision → outcome; clarifier effectiveness; channel performance; A/B tests of prompts/models.
+
 --- 
 
 ### Pillar 1: The Data Engineering Challenge

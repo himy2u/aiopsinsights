@@ -70,6 +70,6 @@ Effective cost management in Google Cloud Platform requires understanding its un
 
 ## Next Steps
 
-- [Azure Cost Control](/tool-finops/azure-cost-control/)
-- [Serverless Cost Optimization](/tool-finops/serverless-costs/)
-- [FinOps Best Practices](/tool-finops/)
+- [Azure Cost Control](azure-cost-control.md)
+- [Serverless Cost Optimization](serverless-costs.md)
+- [FinOps Best Practices](index.md)

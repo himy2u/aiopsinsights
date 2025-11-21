@@ -71,6 +71,6 @@ Optimizing AWS costs is crucial for businesses to maximize their cloud investmen
 
 ## Next Steps
 
-- [GCP Cost Management](/tool-finops/gcp-cost-management/)
-- [Kubernetes Cost Management](/tool-finops/k8s-cost-management/)
-- [FinOps Best Practices](/tool-finops/)
+- [GCP Cost Management](gcp-cost-management.md)
+- [Kubernetes Cost Management](k8s-cost-management.md)
+- [FinOps Best Practices](index.md)

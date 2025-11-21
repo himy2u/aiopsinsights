@@ -43,6 +43,25 @@ graph TD
    - Point-in-time correctness
    - Feature logging for training
 
+### Dimensional Model (Gold)
+For durable analytics, monitoring, and governance, materialize a small dimensional model alongside the feature store:
+
+- **Dimensions**
+  - `dim_time`: calendar breakdown (date_key, hour, week, month, quarter)
+  - `dim_specialty`: normalized medical specialty taxonomy (SCD2 if mappings evolve)
+  - `dim_channel`: intake channel (web, mobile, IVR)
+  - `dim_model_version`: model metadata for A/B tests and audits
+
+- **Facts**
+  - `fact_triage_decision`: one row per decision
+    - Keys: date_key, time_key, specialty_key, channel_key, model_key
+    - Measures: latency_ms, confidence_score, token_in, token_out, cost_usd_estimate
+    - Labels: urgency, next_best_action, decision_id, trace_id
+  - `fact_evaluations` (optional): offline/online eval results per decision and model
+    - Measures: agreement_with_expert, safety_score, hallucination_flag, rubric JSON
+
+This mirrors FAANG lakehouse patterns and supports BI dashboards, safety audits, cost tracking, and product analytics while the feature store serves ML.
+
 ### Implementation
 
 ```python

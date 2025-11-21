@@ -95,7 +95,11 @@ def process_batch(messages: list, output_dir: Path):
     timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
     output_path = output_dir / f"stream_batch_{timestamp}.parquet"
     df.to_parquet(output_path)
-```
+
+### Why both streaming and batch?
+- **Streaming** powers low-latency triage, online metrics, and near-real-time monitoring.
+- **Batch** supports backfills, reprocessing with new schemas/models, analytics, audits, and cost‑efficient large aggregations.
+- Design: events are the source of truth; batch derives from events for governance and analysis.
 
 ## Data Validation
 

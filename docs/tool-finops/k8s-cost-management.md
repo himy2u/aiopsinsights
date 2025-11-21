@@ -98,6 +98,6 @@ As Kubernetes adoption grows, managing costs in containerized environments has b
 - Team education and awareness
 
 ## Next Steps
-- [Serverless Cost Optimization](/tool-finops/serverless-costs/)
-- [Datadog vs. New Relic](/tool-finops/datadog-vs-newrelic/)
-- [FinOps Principles](/finops/principles/)
+- [Serverless Cost Optimization](serverless-costs.md)
+- [Datadog vs. New Relic](datadog-vs-newrelic.md)
+- [FinOps Principles](../finops/principles.md)

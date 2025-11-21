@@ -69,6 +69,5 @@ Financial Operations (FinOps) is a cloud financial management discipline that br
 
 ## Next Steps
 
-- [FinOps Implementation Guide](/finops/implementation/)
-- [FinOps Case Studies](/finops/case-studies/)
-- [Cloud Cost Management](/tool-finops/)
+- [FinOps Overview](index.md)
+- [Cloud Cost Management](../tool-finops/index.md)

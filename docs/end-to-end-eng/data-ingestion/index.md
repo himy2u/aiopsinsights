@@ -4,9 +4,9 @@ Welcome to the Data Ingestion section of our End-to-End Engineering guide. This 
 
 ## Topics
 
-- [Batch Processing](batch-processing/): Learn how to efficiently process large volumes of data in scheduled batches.
-- [Stream Processing](stream-processing/): Explore real-time data processing techniques for time-sensitive applications.
-- [Data Validation](data-validation/): Ensure data quality and consistency with robust validation techniques.
+- [Batch Processing](../batch-processing/index.md): Learn how to efficiently process large volumes of data in scheduled batches.
+- [Stream Processing](stream-processing.md): Explore real-time data processing techniques for time-sensitive applications.
+- [Data Validation](data-validation.md): Ensure data quality and consistency with robust validation techniques.
 
 ## Overview
 

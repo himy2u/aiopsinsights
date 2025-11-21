@@ -71,6 +71,6 @@ Microsoft Azure provides comprehensive tools for cost management and optimizatio
 
 ## Next Steps
 
-- [Datadog vs. New Relic](/tool-finops/datadog-vs-newrelic/)
-- [Kubernetes Cost Management](/tool-finops/k8s-cost-management/)
-- [FinOps Best Practices](/tool-finops/)
+- [Datadog vs. New Relic](datadog-vs-newrelic.md)
+- [Kubernetes Cost Management](k8s-cost-management.md)
+- [FinOps Best Practices](index.md)

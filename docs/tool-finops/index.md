@@ -5,14 +5,14 @@ Making informed decisions about your cloud infrastructure and costs. We provide 
 ## Tool Reviews
 
 ### Cloud Platforms
-- [AWS Cost Optimization Tools](/tool-finops/aws-cost-optimization/)
-- [GCP Cost Management](/tool-finops/gcp-cost-management/)
-- [Azure Cost Control](/tool-finops/azure-cost-control/)
+- [AWS Cost Optimization Tools](aws-cost-optimization.md)
+- [GCP Cost Management](gcp-cost-management.md)
+- [Azure Cost Control](azure-cost-control.md)
 
 ### Monitoring & Optimization
-- [Datadog vs. New Relic](/tool-finops/datadog-vs-newrelic/)
-- [Kubernetes Cost Management](/tool-finops/k8s-cost-management/)
-- [Serverless Cost Optimization](/tool-finops/serverless-costs/)
+- [Datadog vs. New Relic](datadog-vs-newrelic.md)
+- [Kubernetes Cost Management](k8s-cost-management.md)
+- [Serverless Cost Optimization](serverless-costs.md)
 
 ## FinOps Framework
 
@@ -23,9 +23,9 @@ Making informed decisions about your cloud infrastructure and costs. We provide 
 4. **Governance** - Implement policies and guardrails
 
 ### Getting Started with FinOps
-- [FinOps 101: A Beginner's Guide](/tool-finops/finops-101/)
-- [Building a FinOps Team](/tool-finops/building-finops-team/)
-- [Cost Allocation Strategies](/tool-finops/cost-allocation/)
+- [FinOps Principles](../finops/principles.md)
+- [Building a FinOps Team](building-finops-team.md)
+- [Cost Allocation Strategies](cost-allocation.md)
 
 ## Cost Optimization Strategies
 
@@ -50,9 +50,9 @@ Making informed decisions about your cloud infrastructure and costs. We provide 
 - Budget alerts and forecasting
 
 ## Case Studies
-- [Reducing Cloud Costs by 60% at Scale](/tool-finops/case-studies/cost-reduction/)
-- [Implementing FinOps in a Growing Startup](/tool-finops/case-studies/startup-finops/)
-- [Multi-Cloud Cost Optimization](/tool-finops/case-studies/multi-cloud/)
+- [AWS Cost Optimization](aws-cost-optimization.md)
+- [GCP Cost Management](gcp-cost-management.md)
+- [Azure Cost Control](azure-cost-control.md)
 
 ## Tools & Resources
 - [OpenCost](https://www.opencost.io/) - Open source cost monitoring for Kubernetes
