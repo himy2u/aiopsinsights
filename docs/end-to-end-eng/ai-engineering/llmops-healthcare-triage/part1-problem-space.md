@@ -28,11 +28,30 @@ The central task is to transform a patient's colloquial, often ambiguous, descri
     "suggested_intake_questions": [
       "When did the symptoms start?",
       "Do you have a history of heart conditions?"
-    ]
+    ],
+    "next_best_action": "call emergency services"
   }
   ```
 
-This is a non-trivial task that requires a sophisticated, multi-layered solution. Our goal is to build this system, focusing on three key engineering pillars.
+This is a non-trivial task that requires a sophisticated, multi-layered solution. The system should also suggest clarifying follow-up questions and a safe, **next best action** (e.g., "call emergency services", "book primary care", "self-care guidance"). Our goal is to build this system, focusing on three key engineering pillars.
+
+#### How symptoms turn into decisions
+1. Parse the free-text complaint and extract key medical signals.
+2. Classify `{specialty, urgency}` with a fine‑tuned model.
+3. Use an agentic step to ask follow-up questions when confidence is low or information is missing.
+4. Ground on clinical guidance via RAG to propose a safe "next best action" and output a structured decision.
+
+#### Output schema
+The triage service produces a compact, structured decision payload:
+```json
+{
+  "specialty": "Cardiology",
+  "urgency": "High",            
+  "confidence_score": 0.0,
+  "suggested_intake_questions": ["string"],
+  "next_best_action": "emergency|book_primary_care|self_care"
+}
+```
 
 --- 
 
@@ -41,11 +60,48 @@ This is a non-trivial task that requires a sophisticated, multi-layered solution
 
 There is no public, off-the-shelf dataset for this task. We must build it from the ground up.
 
-1.  **Data Sourcing**: We'll ingest and combine public medical dialog datasets (e.g., from HuggingFace) with synthetically generated data for symptoms, locations, and physician specialties to ensure comprehensive coverage.
+1.  **Data Sourcing**: We'll ingest and combine public medical dialog datasets (e.g., from HuggingFace) with synthetically generated data for symptoms, and physician specialties to ensure comprehensive coverage.
 2.  **Bronze-Silver-Gold Pipeline**: We will design a data pipeline to process this information.
     *   **Bronze Layer**: Raw, unstructured source data.
     *   **Silver Layer**: Data is cleaned, structured, and anonymized (PII redacted).
     *   **Gold Layer**: An expert-validated dataset that maps free-text symptoms to structured outputs. This becomes our ground truth for training and RAG.
+
+#### Event schema (stream-first)
+We model patient symptom submissions as immutable events.
+
+```json
+{
+  "event_name": "symptom_reported",
+  "event_version": 1,
+  "event_time": "2025-11-19T12:34:56Z",
+  "patient_id": "uuid",
+  "payload": {
+    "symptom_text": "string",
+    "channel": "web|mobile|ivr",
+    "locale": "en-US"
+  },
+  "trace_id": "uuid"
+}
+```
+
+#### Schema evolution strategy
+- **Backward-compatible changes** only (additive fields, defaults).
+- Enforce via **registry** (e.g., Confluent Schema Registry) and CI checks.
+- Version events with `event_version`; deprecate, never break.
+
+#### Streaming backbone (Kafka/Pulsar)
+- Use a topic like `triage.symptom_reported` for ingestion and `triage.decision_made` for outputs.
+- Bronze persists the raw event; Silver materializes curated tables; Gold stores expert labels.
+
+#### Data contracts
+- Producer promises: required fields, PII handling, SLA on delivery.
+- Consumer expectations: latency SLOs, retry semantics, idempotency keys.
+- Contract as code: JSON schema + tests enforced in CI before deploys.
+
+#### Data product & metadata
+- Data product: `triage_decisions` (owner: AI Engineering).
+- Interfaces: stream (`triage.decision_made`), table (`gold.triage_decisions`).
+- Metadata: lineage, freshness, quality scores, owners, and SLOs exposed in catalog.
 
 ### Pillar 2: The AI/ML Challenge
 **Goal**: Build a highly accurate, context-aware, and safe triage and routing engine.
@@ -54,7 +110,7 @@ Simply prompting a generic LLM is not enough; it's expensive, slow, and lacks th
 
 1.  **Retrieval-Augmented Generation (RAG)**: We'll build a RAG system to provide the LLM with two critical pieces of real-time information:
     *   A **Medical Knowledge Base** for grounding in facts.
-    *   A **Physician Directory** with specialty, location, and availability.
+    *   A **Physician Directory** with specialty.
 2.  **Fine-Tuned Classification Model**: We will fine-tune an efficient, open-source LLM (like Llama3-8B or Mistral-7B) on our "Golden Dataset." This specialized model will perform the core classification task (`symptom text → {specialty, urgency}`) far more reliably and cost-effectively than a general model.
 3.  **Agentic Workflow**: For ambiguous inputs, the model will act as an agent, generating clarifying questions to gather more information before making a final recommendation.
 
