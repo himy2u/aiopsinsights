@@ -6,7 +6,7 @@ Whether you're a data scientist, ML engineer, Data Engineer or tech leader, you'
 
 ## Featured Sections
 
-### 📚 [AI Papers](/ai-papers/)
+### 📚 [AI Papers](/ai-papers/
 Dive into the latest research in AI and ML, with detailed breakdowns, practical implementations, and key takeaways from influential papers.
 
 ### 🛠️ [End-to-End Engineering](/end-to-end-eng/)
@@ -25,4 +25,4 @@ Explore the sections above to begin your journey, or check out our [GitHub repos
 
 ## About the Author
 
-Himanshu Pandey is a Data Leader with expertise in AI/ML, data engineering, and cloud infrastructure. Connect with me on [Twitter](https://x.com/himanshuptech) or [LinkedIn](https://www.linkedin.com/in/hrnp).
+Himanshu Pandey is a Data Leader with expertise in AI/ML, data engineering, and cloud infrastructure. Connect with me on [Twitter](https://x.com/himanshuptech) or [LinkedIn](https://linkedin.com).
